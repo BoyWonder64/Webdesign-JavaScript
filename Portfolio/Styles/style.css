@@ -1,0 +1,250 @@
+@charset "utf-8";
+@font-face {
+    font-family: MedievilArcade;
+    src: url(../Fonts/alagard.ttf);
+} 
+
+@font-face {
+    font-family: pixelHeading;
+    src: url(../Fonts/Alkhemikal.ttf);
+} 
+
+/* HTML and Body */
+
+
+html {
+
+	height: 100%;
+	font-size: 14px;
+   background-image: url(../Images/Pixel_Art_Background.jpg) ;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   background-color: rgba(36,29,44,255);
+   
+}
+
+body {
+    border-radius: 10px;
+    background-position: right bottom, left top;
+    background-size: contain;
+    background-color: #a4cce3;
+ 
+    
+    background-repeat: repeat;
+    background-position: center;
+    background-size:100%;
+    border-width: 100px;
+    box-shadow: rgb(51, 51, 51) 20px 0px 40px,  rgb(51, 51, 51) -20px 0px 40px,
+                inset rgb(5, 14, 43) 0px 0px 40px;
+    border-left: 3px solid rgb(51, 51, 51);
+    border-right: 3px solid rgb(51, 51, 51);
+    min-height: 100%;  
+    margin: 0px auto;
+    min-width: 350px;
+    max-width: 1020px;  
+    width: 100%;
+    position: inherit;
+}
+
+
+
+/* Heading Style & Font*/
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 25%;
+    text-shadow: 2px 3px 2px rgba(230, 178, 36, 0.8);
+    font-family: pixelHeading;
+    text-overflow: ellipsis;
+
+    
+  
+    
+}
+
+h1#mainTitle{
+    font-size: 45px;
+    display: block;
+    width: 115%;
+    letter-spacing: 2px;
+    font-kerning: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    
+}
+
+h3 {
+    font-family: MedievilArcade;
+    text-align: center;
+    font-size: 3em;
+    text-decoration: underline;
+    background-color: #218b82;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    
+}
+
+h4{
+    text-indent: -10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+div.academic_portfolio{
+    display:flex;
+    align-items: center;
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    line-height: 2.6;
+  
+   
+}
+
+
+/* Nav */
+
+
+nav{
+    padding-left: 3%;
+    font-family: MedievilArcade;
+    font-size: 1.25em;
+    background-color: #98d4bb;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    -ms-box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+}
+
+
+
+nav > ol > li a:link, nav > ol >li a:visited {
+    color:rgb(36, 19, 187);
+    text-decoration: underline;
+   
+    
+}
+
+nav > ol > li a:hover, nav > ol > li a:active {
+    color: rgb(205, 63, 170);
+    text-decoration: underline;
+
+ }
+
+
+ /* Listings */
+
+ ol {
+    list-style-image: url(../Images/pixelheart.png);
+ }
+
+/* Section */
+
+section {
+    background-color: white;
+    padding: 25px;
+    padding-left: 5%;
+    border-radius: 45px;
+
+}
+
+section#resumePage {
+    background-color: white;
+    border-radius: 1px;
+    padding: 25px;
+    -webkit-box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    -ms-box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    
+}
+
+section#resumePage > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: none;
+    letter-spacing: normal;
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: -10%;
+}
+
+p#linkHelp {
+    font-size: x-large;
+    text-align: center;
+    
+}
+
+
+
+
+/*Images */
+img#profilePic{
+    border-radius: 50%;
+}
+
+div.altImage{
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 73, 220));
+}
+
+
+
+/* Table */
+thead {
+    background-color: azure;
+    border: 3px  solid;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 25%;
+    padding-left: 10px;  
+  }
+  
+  table, td{
+    width: 100%;
+  }
+
+
+ table tr, table td {
+    height: 25px;
+    text-align: left;
+    border-collapse: collapse;
+} 
+   
+
+/* Footer */
+
+footer{
+    padding-top: 2%;
+    font-size: 40px;
+    text-align: center;
+    font-family: MedievilArcade;
+    margin-top: 7%;
+    background-color:#dc828f ;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    -ms-box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 20px 4px rgba(0,0,0,0.75);
+    
+}

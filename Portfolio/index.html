@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <!--
+    Build Your Own Website
+    
+    Author: Maitland Andrus
+    Date: 2/17/2023  
+
+    Filename: index.html
+   -->
+
+   <title>Maitlands Website</title>
+   <meta charset="utf-8" >
+   <meta name = "keywords" content="HTML Practice">
+   <link href="Styles/layout.css" rel="stylesheet">
+   <link href="Styles/style.css" rel="stylesheet">
+   <script src="Scripts/rb_formsubmit.js"></script>
+</head>
+<body>
+   <header>
+      <div class="headerContainer">
+         <div class="bannerImage"><img class="banner" src ="Images/banner.png" alt="pixelBanner" ></div>
+         <div class="centerTextHeader"><h1 id="mainTitle">Welcome!</h1></div>
+   </div>
+   </header>
+   <nav>
+      <ol>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="resume.html">My Resume & Work Exp</a></li>
+         <li><a href="academic_portfolio.html">Academic Portfolio</a></li>
+         <li><a href="https://resplendent-buttercream-8e60a7.netlify.app/projects" target="_blank">CSS & HTML Projects</a></li>
+         <li><a href="about_me.html">About Me</a></li>
+         <li><a href="my_family.html">My Family</a></li>
+         <li><a href="my_hobbies.html">Hobbies</a></li>
+       
+      </ol>
+   </nav>
+
+
+  
+   <section id="aboutMeColumns">
+       <h3>Take a look around...</h3>
+       <div id="pfp"><img id="profilePic" src ="Images/pfp.png" alt="ProfilePictire" ></div>
+       <p> Just as the title says, please feel free to take a look around. Linked are various
+         pages about me and my work experience. In the resume page you can read both an embeded 
+         resume and find a link to download it. Other tabs contain information about my family, some 
+         hobbies I do, classes I have taken, and a link to my Client Side Web Projects. 
+       </p>
+
+
+       <h3>Contact me!</h3>
+       <p> If you would like to get in touch, please fill out the form down below!
+       </p>
+  
+  
+
+   <div class="contactContainer">
+      <form action="http://www.example.com/survey" id="survey" method="post">
+    
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="First Name">
+    
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+    
+        <label for="tel">Phone Number</label>
+        <input name="custPhone" id="tel" type="text"  placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{4}$">
+    
+        <label for="mail">E-mail*</label>
+        <input name="custEmail" id="mail" type="email"  placeholder="example@example.com" required>
+
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Additional Information..." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+   </section>
+   <footer>
+   &nbsp;Maitland &nbsp; &nbsp; &nbsp;
+   &copy; Copyright 2023 <a href = "https://commons.wikimedia.org/wiki/File:Pixel_Art_Background.jpg" target="_blank">Background - Ackuray</a>
+</footer>  
+
+</body>
